@@ -7,25 +7,23 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      people: []
+      people: {}
     }
   }
 
   handleClick = () => {
-    // console.log('Button is working');
-
-  }
-
-  componentDidMount() {
+    const number = Math.floor(Math.random()*88);
     const getData = async () => {
-      const response = await fetch('https://swapi.co/api/people/');
+      const response = await fetch(`https://swapi.co/api/people/${number}/`);
       const data = await response.json();
       this.setState({
-        people: data.results
+        people: data
       });
     }
     getData();
+
   }
+
 
   render() {
     return (
