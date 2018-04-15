@@ -12,7 +12,7 @@ class Character extends Component {
           <p>You are {this.props.person.name}!</p>
           <p>Sex: {this.props.person.gender}</p>
           <p>Birth year: {this.props.person.birth_year}</p>
-          <p>Height: {this.props.person.height}</p>
+          <p>Height: {this.props.person.height} cm</p>
           <p>Hair colour: {this.props.person.hair_color}</p>
           <p>Eye colour: {this.props.person.eye_color}</p>
 
