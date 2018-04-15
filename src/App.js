@@ -7,20 +7,27 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      people: {}
+      person: {
+        name: '____',
+        gender: '____',
+        birth_year: '____',
+        height: '____',
+        hair_color: '____',
+        eye_color: '____'
+      }
     }
   }
 
   handleClick = () => {
     const number = Math.floor(Math.random()*88+1);
-    const getData = async () => {
+    const getPerson = async () => {
       const response = await fetch(`https://swapi.co/api/people/${number}/`);
-      const data = await response.json();
+      const person = await response.json();
       this.setState({
-        people: data
+        person: person
       });
     }
-    getData();
+    getPerson();
 
   }
 
@@ -30,8 +37,9 @@ class App extends Component {
       <div className="main">
         <h1>Which Star Wars Character Are You?</h1>
         <h2>Push the button and let the Force decide!</h2>
+        <Character person={this.state.person}/>
         <Button handleClick={this.handleClick}/>
-        <Character/>
+
       </div>
     );
   }
