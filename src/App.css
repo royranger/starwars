@@ -16,4 +16,6 @@ h1 {
   font-size: 300%;
   font-weight: bold;
   color: yellow;
+  margin-left: 40px;
+  margin-right: 40px;
 }

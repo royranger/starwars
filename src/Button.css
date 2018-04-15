@@ -19,12 +19,9 @@ body {
 
   box-shadow: inset rgba(0,0,0,0.2) 0px 5px 6px ;
 
-  left: 50%;
-  top: 90%;
-  margin-left: -50px;
-  margin-top: -50px;
-  position: absolute;
-  clear: both;
+  margin-top: 10px;
+  position: relative;
+  bottom: 0;
 }
 
 .push {
@@ -86,4 +83,9 @@ body {
   -webkit-box-shadow: inset rgba(0,0,0,.5) 0px 5px 10px;
   -moz-box-shadow: inset rgba(0,0,0,.5) 0px 5px 10px;
   box-shadow: inset rgba(0,0,0,.5) 0px 5px 10px;
+}
+
+.justify {
+  display: flex;
+  justify-content: center;
 }

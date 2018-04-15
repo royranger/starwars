@@ -1,8 +1,8 @@
 .card {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 70px;
+  margin-right: 70px;
   background-color: red;
-  /* height: 300px; */
+  height: 300px;
   display: flex;
   align-items: space-between;
   float: none;
@@ -17,6 +17,6 @@
 
 .picture {
   max-height: 70%;
-  max-width: 70%;
+  max-width: 50%;
 
 }

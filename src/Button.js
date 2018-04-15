@@ -5,9 +5,12 @@ class Button extends Component {
 
   render() {
     return (
-      <div id="button" onClick={this.props.handleClick}>
-        <a className="push">PUSH</a>
-    </div>
+      <div className="justify">
+        <div id="button" onClick={this.props.handleClick}>
+          <a className="push">PUSH</a>
+        </div>
+      </div>
+
     )
   }
 
