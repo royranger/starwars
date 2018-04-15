@@ -12,7 +12,7 @@ class App extends Component {
   }
 
   handleClick = () => {
-    const number = Math.floor(Math.random()*88);
+    const number = Math.floor(Math.random()*88+1);
     const getData = async () => {
       const response = await fetch(`https://swapi.co/api/people/${number}/`);
       const data = await response.json();
