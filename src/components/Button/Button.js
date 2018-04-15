@@ -10,10 +10,8 @@ class Button extends Component {
           <a className="push">PUSH</a>
         </div>
       </div>
-
     )
   }
-
 }
 
 export default Button;

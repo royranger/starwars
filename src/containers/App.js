@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Button from './Button';
-import Character from './Character';
+import Button from '../components/Button/Button';
+import Character from '../components/Character/Character';
 
 class App extends Component {
   constructor(props) {
@@ -28,7 +28,6 @@ class App extends Component {
       });
     }
     getPerson();
-
   }
 
 
@@ -39,7 +38,6 @@ class App extends Component {
         <h2>Push the button and let the Force decide!</h2>
         <Character person={this.state.person}/>
         <Button handleClick={this.handleClick}/>
-
       </div>
     );
   }
